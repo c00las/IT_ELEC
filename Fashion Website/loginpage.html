@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FabriXX | Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    
+    <link rel="icon" type="image/icon" href="logo.png">
+    
+    <style>
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #fdaaaa;
+            
+
+        }
+
+        header {
+            background-color: rgb(253, 224, 224);
+            padding: 10px;
+            
+        }
+
+        a {
+            color: #fd7c7c;
+            font-family: verdana;
+            font-weight: bold;
+
+        }
+
+        .navbar {
+            padding: 1% 10% 1% 10%;
+            background-color: white;
+
+        }
+
+        a.dropdown-item {
+            color: #fd7c7c;
+            font-family: verdana;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        ul.dropdown-menu {
+            margin-left: 85%;
+        }
+
+        img.headerlogo {
+            width: 50px;
+            height: 45px;
+            margin-left: 2%;
+        }
+
+        img.fabh {
+            width:150px;
+            height: 50px;
+            margin-left: 37.5%
+        }
+
+        img.hamburger {
+            width: 35px;
+            height: 35px;
+            float: right;
+            margin-top: 10px;
+        }
+
+        ul.dropdown-menu {
+            margin-left: 75%;
+        }
+
+        a.dropdown-item {
+            color: #fd7c7c;
+            font-family: verdana;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        .textad {
+            padding: 8px;
+            background-color: white;
+        }
+
+        p.adtext {
+            color: #e06c6c ;
+            font-family: courier new;
+            font-weight: bold;
+            margin-top: 1%;
+            letter-spacing: 2px;
+            margin-left: 4%;
+        }
+
+        h2.offcanvas-title {
+            color: #fd7c7c;
+            font-family: courier new;
+            font-weight: bold;
+            text-decoration: none;
+            padding-left: 3%;
+        }
+
+        footer {
+            background-color: white;
+            padding: 15px 5.5px 5.5px 5.5px;
+            
+
+        }
+
+        img.banner {
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 540px;
+        }
+
+        p.foot {
+            color: #fd7c7c;
+            text-align: center;
+            font-family: verdana;
+            margin-bottom: 20px;
+        }
+
+        form.d-flex {
+            padding: 5%;
+            color: #fd7c7c;
+        }
+
+        button.btn {
+            background-color: #fd7c7c;
+            color: white;
+            border: #fdaaaa 3px;
+            font-family: courier new;
+            font-weight: bold;
+        }
+
+         button.btn:hover {
+            background-color: white;
+            color: #fd7c7c;
+            border: white 3px;
+            font-family: courier new;
+            font-weight: bold;
+        }
+
+        .offcanvas {
+            background-color: rgb(253, 224, 224);
+        }
+
+        a.nav-link {
+            color: #fd7c7c;
+            font-family: courier new;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        li.nav-item {
+            color: #fd7c7c;
+            font-family: courier new;
+            font-weight: bold;
+            font-size: 20px;
+            padding-left: 3%;
+        }
+
+        .greet-box {
+
+        color: #fd7c7c;
+        background-color: white;
+        margin-top: 20vh;
+        padding: 50px 50px 50px 50px;
+        margin-left: 350px;
+        margin-right: 350px;
+        font-family: verdana;
+        font-weight: bold;
+        margin-bottom: 9%;
+        
+        }
+    
+        h2.mb-4 {
+    
+            font-family: verdana;
+            font-weight: bold;
+        }
+    
+        button.nxtbutt {
+    
+            background-color: #fd7c7c;
+            font-family: verdana;
+            font-weight: bold;
+            padding: 3% 46% 3% 46%;
+            border: 0;
+            color: white;
+            text-align: center;
+            
+        
+        }
+
+        h2.mb-4 {
+            font-family: verdana;
+            font-weight: bold;
+            color: #fd7c7c;
+        }
+
+        label.form-label {
+            margin-left: .5%;
+        }
+        
+    </style>
+</head>
+
+
+<!-- HEADER -->    
+<header>
+
+    <img src="logofinal.png" class="headerlogo">
+    <img src="fabheaderfinal.png" class="fabh">
+
+<!-- END HEADER-->
+
+</header>
+
+<body>
+
+    <div class="greet-box">
+        <h2 class="mb-4 text-center">Welcome to FabriXX!</h2>
+        
+<!-- NAME INPUT -->      
+        <div class="mb-3">
+            <label for = "nameInput" class ="form-label">NAME</label>
+            <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+
+        </div>
+
+<!-- END NAME INPUT-->
+
+<!-- PASSWORD INPUT-->
+
+        <div class="mb-5">
+            <label for = "passInput" class ="form-label">PASSWORD</label>
+            <input type="password" class="form-control" id="passInput" placeholder="Enter your password">
+        </div>
+
+<!-- END PASSWORD INPUT-->
+
+        <center><button onclick="greetUser()" class="nxtbutt">LOGIN</button></center>
+            <div class="alert alert-info at -4 d-none" id="greetingAlert" role="alert"></div>
+        
+  </div>
+        
+<script>
+        function greetUser() {
+
+        const nameInput = document.getElementById("nameInput");
+        const passInput = document.getElementById("passInput");
+        const alertBox = document.getElementById("greetingAlert");
+        const enteredName = nameInput.value.trim();
+        const enteredPassword = passInput.value;
+        const correctPassword = "00000";
+        const redirectURL = "homepage.html"; // Replace with the actual URL
+
+        if (enteredName !== "" && enteredPassword === correctPassword) {
+            // Both name is entered and password is correct
+            window.location.href = redirectURL;
+        } else {
+            // Either name is empty or password is incorrect
+            alertBox.innerText = "Please enter your name and the correct password.";
+            alertBox.classList.remove("d-none");
+            alertBox.classList.replace("alert-info", "alert-warning");
+
+            // Optionally, you can clear the password field after an error
+            passInput.value = "";
+            }
+            }
+
+
+</script>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
