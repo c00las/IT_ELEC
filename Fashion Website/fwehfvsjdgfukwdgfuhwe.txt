@@ -1,0 +1,570 @@
+<!-- CAROUSEL -->
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="1500">
+      <img src="banner6.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="1500">
+      <img src="banner4.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="1500">
+      <img src="banner2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="1500">
+        <img src="banner3.jpg" class="d-block w-100" alt="...">
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+    
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- END CAROUSEL -->
+
+<!-- PRODUCTS CATEGORY -->
+<div class="categ accordion" id="categoryAccordion">
+
+
+    <p class="center-buttons">
+
+        <a class="btnn1 btn-primary" data-bs-toggle="collapse" href="#collapseTops" role="button" aria-expanded="false" aria-controls="collapseTops"> TOPS </a>
+        <a class="btnn2 btn-primary" data-bs-toggle="collapse" href="#collapseBottoms" role="button" aria-expanded="false" aria-controls="collapseBottoms"> BOTTOMS </a>
+        <a class="btnn3 btn-primary" data-bs-toggle="collapse" href="#collapseFootwear" role="button" aria-expanded="false" aria-controls="collapseFootwear"> FOOTWEAR </a>
+
+        </p>
+
+        <div class="collapse" id="collapseTops" data-bs-parent="#categoryAccordion">
+        <div class="card card-body">
+            <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4 g-3">
+
+<!-- TOPS  -->
+<div class="col">
+                    <div class="card h-100">
+                        <img src="whitetop.jpeg" class="card-img-1top1" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Off-Shoulder White Top</h5>
+                            <p class="card-text">₱150.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="" class="add-to-cart" data-name="Black and White Street Shirt" data-price="250.00">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="yttrendtop.jpeg" class="card-img-1top2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">White Trendy Cropped Top</h5>
+                            <p class="card-text">₱250.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="brownfittedtop.jpeg" class="card-img-1top3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Brown Fitted Top</h5>
+                            <p class="card-text">₱150.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="blacktube.jpg" class="card-img-1top4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Black Tube Top</h5>
+                            <p class="card-text">₱120.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="haltertop.jpg" class="card-img-1top5" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Low-Cut Red Halter Top</h5>
+                            <p class="card-text">₱200.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="greytop.jpeg" class="card-img-1top6" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Grey V-Neck Top</h5>
+                            <p class="card-text">₱180.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="moonshirt.jpeg" class="card-img-1top7" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Moon Graphic Shirt</h5>
+                            <p class="card-text">₱250.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="butterflyshirt.jpeg" class="card-img-1top8" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Butterfly Graphic Shirt</h5>
+                            <p class="card-text">₱250.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+</div>
+        </div>
+    </div>
+<!--  -->
+    
+<!-- BOTTOMS  -->
+        <div class="collapse" id="collapseBottoms" data-bs-parent="#categoryAccordion">
+        <div class="card card-body">
+            <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4 g-3">
+
+
+<div class="col">
+                    <div class="card h-100">
+                        <img src="flarepants.jpg" class="card-img-2top1" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Black Flare Pants</h5>
+                            <p class="card-text">₱250.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="koketdenimpants.jpg" class="card-img-2top2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Trendy Denim Pants</h5>
+                            <p class="card-text">₱350.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="midiskirt.jpg" class="card-img-2top3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bow Decor Midi Skirt</h5>
+                            <p class="card-text">₱250.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+
+<div class="col">
+                    <div class="card h-100">
+                        <img src="longdenimskirt.jpg" class="card-img-2top4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Long Denim Skirt</h5>
+                            <p class="card-text">₱350.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="lbrowncargo.jpg" class="card-img-2top5" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Light Brown Cargo Pants</h5>
+                            <p class="card-text">₱300.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="kneelength.jpg" class="card-img-2top6" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Knee Length Denim Shorts</h5>
+                            <p class="card-text">₱280.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="spiralshorts.jpg" class="card-img-2top7" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Spiral Decor Beige Shorts</h5>
+                            <p class="card-text">₱250.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="brownskirt.jpg" class="card-img-2top8" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Brown Pleated Mini Skirt</h5>
+                            <p class="card-text">₱280.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+</div>
+        </div>
+    </div>
+
+    
+<!-- FOOTWEAR  -->
+        <div class="collapse" id="collapseFootwear" data-bs-parent="#categoryAccordion">
+            <div class="card card-body">
+           <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4 g-3">
+
+
+<div class="col">
+                    <div class="card h-100">
+                        <img src="cornysneakers.jpeg" class="card-img-3top1" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Vans Old Skool Black Sneakers </h5>
+                            <p class="card-text">₱4,499.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="redflats.jpg" class="card-img-3top2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Ballerina Flats</h5>
+                            <p class="card-text">₱480.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="brownloafers.jpg" class="card-img-3top3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Brown Leather Loafers</h5>
+                            <p class="card-text">₱1,050.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+
+<div class="col">
+                    <div class="card h-100">
+                        <img src="redboots.jpeg" class="card-img-3top4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Boots</h5>
+                            <p class="card-text">₱120.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="blackdollshoes.jpg" class="card-img-3top5" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Black Dolly Platform Shoes</h5>
+                            <p class="card-text">₱580.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="redconverse.jpeg" class="card-img-3top6" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Converse</h5>
+                            <p class="card-text">₱980.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="" >ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="brownsandals.jpg" class="card-img-3top7" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Warm Brown Roman Sandals</h5>
+                            <p class="card-text">₱650.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+<div class="col">
+                    <div class="card h-100">
+                        <img src="greencrocs.jpg" class="card-img-3top8" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Plain Crocs</h5>
+                            <p class="card-text">₱950.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
+                        </div>
+                    </div>
+                </div>
+</div>
+
+            </div>
+        </div>
+
+    <!-- END PRODUCTS CATEGORY -->
+
+
+
+
+
+
+
+
+      * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(253, 224, 224);
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align items to the left */
+        }
+
+        a, a.dropdown-item {
+            color: #fd7c7c;
+            font-family: verdana;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        a.nav-link {
+            color: #fd7c7c;
+            font-family: verdana;
+            font-weight: bold;
+            font-size: 120%;
+            text-decoration: none;
+
+            
+        }
+        .navbar {
+            padding: 1% 10%;
+            background-color: white;
+        }
+
+        img.headerlogo {
+            width: 50px;
+            height: 45px;
+            margin-left: 2vw;
+        }
+
+        img.fabh {
+            width: 10vw;
+            height: 8vh;
+            margin-left: 28%;
+            margin-right: 20%;
+
+
+        }
+
+        img.hamburger {
+            width: 4vw;
+            height: 5vh;
+            margin-top: .5vh;
+            margin-left: 10%;
+
+        }
+
+        .dropdown-container {
+            display: flex; /* Enable flexbox for dropdown and search */
+            align-items: center; /* Vertically align dropdown and search */
+        }
+
+        a.headercateg {
+            margin-left: 2vw;
+        }
+
+        ul.dropdown-menu {
+            margin-left: 0; /* Reset default margin */
+        }
+
+        form.search-form {
+            margin-left: 2vw; /* Add some space between dropdown and search */
+        }
+
+        .textad {
+            padding: 12px;
+            background-color: white;
+        }
+
+        p.adtext {
+            color: #e06c6c;
+            font-family: courier new;
+            font-weight: bold;
+            margin-top: 1%;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        h2.offcanvas-title {
+            color: #fd7c7c;
+            font-family: courier new;
+            font-weight: bold;
+            text-decoration: none;
+            padding-left: 3%;
+            padding-top: 3%;
+            font-size: 220%;
+        }
+
+        footer {
+            background-color: white;
+            padding: 2vw 5.5vw 0.5vw 5.5vw;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        p.foot {
+            color: #fd7c7c;
+            text-align: center;
+            font-family: verdana;
+            margin-bottom: 2.3vh;
+        }
+
+        button.btn {
+            background-color: #fd7c7c;
+            color: white;
+            border: none;
+            font-family: courier new;
+            font-weight: bold;
+        }
+
+        button.btn:hover {
+            background-color: white;
+            color: #fd7c7c;
+            border: 2px solid #fd7c7c;
+        }
+
+        .offcanvas {
+            background-color: rgb(253, 224, 224);
+        }
+
+        li.nav-item {
+            color: #fd7c7c;
+            font-family: courier new;
+            font-weight: bold;
+            font-size: 20px;
+            padding-left: 3%;
+        }
+
+        p.wc {
+            color: #e06c6c;
+            font-family: verdana;
+            letter-spacing: 2px;
+            text-align: center;
+            font-size: 140%;
+            margin-top: 1%;
+        }
+
+        .welcome {
+            background-color: white;
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+            margin-top: 40px;
+        }
+
+        hr.menudivider {
+            margin: 4% 4%;
+        }
+
+        p.wc1 {
+            color: #e06c6c;
+            font-family: verdana;
+            letter-spacing: 2px;
+            text-align: center;
+            font-size: 145%;
+            transition: color 0.2s;
+        }
+
+        p.wc1 a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        p.wc1 a:hover {
+            color: #864040;
+            text-decoration: underline;
+        }
+
+        .welcometop {
+            background-color: white;
+            padding: 1%;
+        }
+
+        .banner {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }

@@ -3,58 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Women's | FabriXX</title>
-
+    <title>FabriXX | Fashion Clothing Shop</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-
     <link rel="icon" type="image/icon" href="logo.png">
-
     <style>
-
-
         * {
             margin: 0;
             padding: 0;
         }
 
-        body {
-            background-color: #fdaaaa;
-            min-height: 100vh;
-
-        }
-
         header {
-                    
             background-color: rgb(253, 224, 224);
             padding: 10px;
-            position: fixed; /* Make the header fixed */
-            top: 0;         /* Stick it to the top of the viewport */
-            left: 0;        /* Align to the left edge */
-            width: 100%;    /* Make it span the entire width */
-            z-index: 1000;   /* Ensure it stays on top of other content */
-     
-            
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align items to the left */
         }
 
-        a {
+        a, a.dropdown-item {
             color: #fd7c7c;
             font-family: verdana;
             font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+        }
 
+        a.nav-link {
+            color: #fd7c7c;
+            font-family: verdana;
+            font-weight: bold;
+            font-size: 120%;
+            text-decoration: none;
         }
 
         .navbar {
-            padding: 1% 10% 1% 10%;
-            background-color: white;
-
-        }
-
-        a.dropdown-item {
-            color: #fd7c7c;
-            font-family: verdana;
-            font-weight: bold;
+            padding: 1% 10%;
             background-color: white;
         }
 
@@ -65,53 +54,45 @@
         }
 
         img.fabh {
-            width:10vw;
+            width: 10vw;
             height: 8vh;
-            margin-left: 37.5vw;
+            margin-left: 30%;
+            margin-right: 22%;
         }
 
         img.hamburger {
             width: 4vw;
             height: 5vh;
-            float: right;
-            margin-top: 2vh;
+            margin-top: .5vh;
+            margin-left: 10%;
+        }
+
+        .dropdown-container {
+            display: flex; /* Enable flexbox for dropdown and search */
+            align-items: center; /* Vertically align dropdown and search */
+        }
+
+        a.headercateg {
+            margin-left: 2vw;
         }
 
         ul.dropdown-menu {
-            margin-left: 75%;
+            margin-left: 0; /* Reset default margin */
         }
 
-        a.dropdown-item {
-            color: #fd7c7c;
-            font-family: verdana;
-            font-weight: bold;
-            background-color: white;
+        form.search-form {
+            margin-left: 2vw; /* Add some space between dropdown and search */
         }
 
         .textad {
-            padding: 8px;
+            padding: 12px;
             background-color: white;
         }
 
         p.adtext {
-            color: #e06c6c ;
+            color: #e06c6c;
             font-family: courier new;
             font-weight: bold;
-            margin-top: 1%;
-            letter-spacing: 2px;
-            text-align: center;
-        }
-
-        .textad2 {
-            padding: 8px;
-            background-color: white;
-        }
-
-        p.adtext2 {
-            color: #e06c6c ;
-            font-family: verdana;
-            font-weight: bold;
-            font-size: 4vh;
             margin-top: 1%;
             letter-spacing: 2px;
             text-align: center;
@@ -123,70 +104,43 @@
             font-weight: bold;
             text-decoration: none;
             padding-left: 3%;
-        }
-
-        img.banner {
-            background-repeat: no-repeat;
-            width: 100vw;
-            height: 65vh;
+            padding-top: 3%;
+            font-size: 220%;
         }
 
         footer {
             background-color: white;
-            padding: 1% 5.5vw 0.5vw 5.5vw;
-            position: fixed; /* Make the element fixed */
-            bottom: 0;      /* Stick it to the bottom of the viewport */
-            left: 0;        /* Align to the left edge */
-            width: 100%;    /* Make it span the entire width */
-            z-index: 1000;   /* Ensure it stays on top of other content */
-            
-            }
-        
+            padding: 2vw 5.5vw 0.5vw 5.5vw;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
         p.foot {
-            
             color: #fd7c7c;
             text-align: center;
             font-family: verdana;
-            margin-bottom: 0; /* Remove existing margin-bottom */
-        }
-        
-        body {
-            
-            background-color: #fdaaaa;
-            min-height: 100vh;
-            padding-bottom: 4.5vw; /* Add padding to the bottom of the body, adjust as needed based on footer height */
-        }
-
-        form.d-flex {
-            padding: 5%;
-            color: #fd7c7c;
+            margin-bottom: 2.3vh;
         }
 
         button.btn {
             background-color: #fd7c7c;
             color: white;
-            border: #fdaaaa 3px;
+            border: none;
             font-family: courier new;
             font-weight: bold;
         }
 
-         button.btn:hover {
+        button.btn:hover {
             background-color: white;
             color: #fd7c7c;
-            border: white 3px;
-            font-family: courier new;
-            font-weight: bold;
+            border: 2px solid #fd7c7c;
         }
 
         .offcanvas {
             background-color: rgb(253, 224, 224);
-        }
-
-        a.nav-link {
-            color: #fd7c7c;
-            font-family: courier new;
-            font-weight: bold;
-            font-size: 20px;
         }
 
         li.nav-item {
@@ -198,679 +152,583 @@
         }
 
         p.wc {
-            color: #e06c6c ;
+            color: #e06c6c;
             font-family: verdana;
             letter-spacing: 2px;
             text-align: center;
             font-size: 140%;
+            margin-top: 1%;
         }
 
         .welcome {
             background-color: white;
             padding-top: 2vh;
             padding-bottom: 2vh;
+            margin-top: 40px;
         }
 
         hr.menudivider {
             margin: 4% 4%;
         }
 
-        h2.offcanvas-title {
-            padding-top: 3%;
-            font-size: 220%;
+        p.wc1 {
+            color: #e06c6c;
+            font-family: verdana;
+            letter-spacing: 2px;
+            text-align: center;
+            font-size: 145%;
+            transition: color 0.2s;
         }
 
-         .carousel-item {
-            height: 45vh;
+        p.wc1 a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s;
         }
 
-        .categ {
+        p.wc1 a:hover {
+            color: #864040;
+            text-decoration: underline;
+        }
 
+        .welcometop {
             background-color: white;
-            margin-bottom: 5%;            
             padding: 1%;
-
         }
 
-
-        a.btnn2 {
-
-            padding-left: 30vh;
-        }
-
-        a.btnn3 {
-
-            padding-left: 30vh;
-        }
-
-        a.btnn4 {
-
-            padding-left: 30vh;
-        }
-
-        a.btnn1:hover {
-
-            color: #bb5858;
-        }
-
-        a.btnn2:hover {
-
-            color: #bb5858;
-        }
-
-        a.btnn3:hover {
-
-            color: #bb5858;
-        }
-
-        a.btnn4:hover {
-
-            color: #bb5858;
-        }
-
-        .collapse {
-
-            width: 10vh;
-        }
-
-        #collapseTops {
-
-            width: 67%;
+        .banner {
+            width: 100%;
             height: 100%;
-            margin-left: 15.5%;
+            object-fit: cover;
+            display: block;
         }
 
-        #collapseBottoms {
-
-            width: 67%;
-            height: 100%;
-            margin-left: 15.5%;
+        .container-fluid.banner-container {
+            height: 300px;
+            padding: 0;
+            position: relative;
         }
 
-        #collapseFootwear {
-
-            width: 67%;
-            height: 100%;
-            margin-left: 15.5%;
+        button.btn {
+            margin-left: 1%;
+            background-color: none;
         }
 
-        .cardbody2 {
-                padding: 5%; 
-                margin-top: 7%;
+        .row {
+            margin-top: 20px; /* Adjust as needed */
+            display: none; /* Initially hide all rows */
         }
 
-        img.card-img-1top4{
-
-            height: 50%;
-            padding-right: 15%;
-            padding-left: 15%;
-            padding-top: 10%;
-            margin-bottom: 42%;
+        .row.active {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
         }
 
-        img.card-img-1top2{
+        .category-links {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 8%;
+        }
 
-            padding-top: 5%;
-            margin-bottom: 5%;
+        .category-links a {
+            margin: 0 50px;
+            text-decoration: none;
+            color: #fd7c7c;
+            font-weight: bold;
+            font-size: 160%;
+            transition: color 0.3s ease;
+        }
+
+        .category-links a.active {
+            color: #bb5858;
+            text-decoration: underline;
+        }
+
+        .col {
+            margin-left: 60%;
+            margin-left: 60%;
+            margin-top: 8%;
+
+
+        }
+
+        img.card-img-top2 {
+
+            height: 80%;
+        }
+
+        img.card-img-top4 {
+
+            height: 80%;
+            padding: 10%;
+        }
+
+        .row {
+
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+
+        img.card-img-bott2 {
+
+            height: 80%;
+        }
+
+        img.card-img-bott3 {
+
             height: 65%;
         }
 
-        img.card-img-1top5{
+        img.card-img-foot4 {
 
-            height: 70%;
-            padding-right: 15%;
-            padding-left: 15%;
-            padding-top: 20%;
-            padding-bottom: 25%;
-            
+            height: 65%;
+            padding: 10%;
         }
 
-        img.card-img-1top7{
-
-            height: 68%;
-            padding-right: 15%;
-            padding-left: 15%;
-            padding-top: 5%;
-            padding-bottom: 22%;
-            
-        }
-
-        img.card-img-1top6{
-
-            height: 80%;
-            padding-bottom: 15%;
-
-        }
-
-        img.card-img-2top3{
-            height: 80% ;
-        }
-
-        img.card-img-2top4{
-            height: 80% ;
-        }
-
-        img.card-img-2top5{
-            height: 90% ;
-        }
-
-        img.card-img-2top6{
-            height: 80% ;
-        }
-
-        img.card-img-2top7{
-            height: 90% ;
-        }
-        
-        img.card-img-2top8{
-            height: 80% ;
-        }
-
-        img.card-img-3top2{
-            height: 90% ;
-            padding-bottom: 0;
-        }
-
-        img.card-img-3top1{
-            height: 90% ;
-            padding-bottom: 0;
-        }
-  
-        img.card-img-3top3{
-            height: 90% ;
-            padding-bottom: 0;
-        }
-
-        img.card-img-3top4{
-            height: 90% ;
-            padding-bottom: 0;
-        }
-
-        img.card-img-3top5{
-            height: 90% ;
-            padding-bottom: 0;
-        }
-
-        img.card-img-3top6{
-            height: 90% ;
-            padding-bottom: 0;
-        }
-
-        img.card-img-3top7{
-            height: 90% ;
-            padding-bottom: 0;
-        }
-
-        img.card-img-3top8{
-            height: 90% ;
-            padding-bottom: 0;
-        }
-
-        .center-buttons {
-            display: flex;
-            justify-content: center;
-        }
-        
+        /* Responsive cart modal styles */
+@media (max-width: 576px) {
+  .modal-content {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .cart-item p {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  #cart-items-container {
+    padding: 0 2px;
+  }
+}
+.cart-item {
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+  word-break: break-word;
+}
     </style>
 </head>
-
-
-<!-- HEADER -->    
-<header>
-
-    <img src="logofinal.png" class="headerlogo">
-    <img src="fabheaderfinal.png" class="fabh">
-
-    <a href="" role="button" data-bs-toggle="offcanvas" aria-expanded="false" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <img src="hammenu.svg" class="hamburger">
-<!-- END HEADER-->
-
-<!-- OFF CANVAS NAVBAR -->
-     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-         
-      <div class="offcanvas-header">
-        <h2 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h2>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-        
-    <hr class="menudivider">
-
-         
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="homepage.html">HOME</a>
-          </li>
-            
-          <li class="nav-item">
-            <a class="nav-link" href="orders.html">MY ORDERS</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              CATEGORIES
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="mens.html">MEN'S</a></li>
-              <li><a class="dropdown-item" href="womens.html">WOMEN'S</a></li>
-            </ul>
-          </li>
-        </ul>
-       
-      </div>
-    </div>
-<!-- END OFF CANVAS NAVBAR-->
-
-</header>
-
 <body>
-
-    <div class="textad">
-        <p class="adtext">WELCOME TO FABRIXX! | 20% OFF ON YOUR FIRST PURCHASE | SHOP FOR YOUR FASHIONABLE NEEDS | CLAIM AND COLLECT VOUCHERS! </p>
-    </div>
-
-    <div class="textad2">
-    <p class="adtext2">WOMEN'S CATEGORY</p>
-    </div>
-
-<!-- CAROUSEL -->
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="1500">
-      <img src="banner6.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item" data-bs-interval="1500">
-      <img src="banner4.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item" data-bs-interval="1500">
-      <img src="banner2.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item" data-bs-interval="1500">
-        <img src="banner3.jpg" class="d-block w-100" alt="...">
-      </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-    
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-<!-- END CAROUSEL -->
-
-<!-- PRODUCTS CATEGORY -->
-<div class="categ accordion" id="categoryAccordion">
-
-
-    <p class="center-buttons">
-
-        <a class="btnn1 btn-primary" data-bs-toggle="collapse" href="#collapseTops" role="button" aria-expanded="false" aria-controls="collapseTops"> TOPS </a>
-        <a class="btnn2 btn-primary" data-bs-toggle="collapse" href="#collapseBottoms" role="button" aria-expanded="false" aria-controls="collapseBottoms"> BOTTOMS </a>
-        <a class="btnn3 btn-primary" data-bs-toggle="collapse" href="#collapseFootwear" role="button" aria-expanded="false" aria-controls="collapseFootwear"> FOOTWEAR </a>
-
-        </p>
-
-        <div class="collapse" id="collapseTops" data-bs-parent="#categoryAccordion">
-        <div class="card card-body">
-            <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4 g-3">
-
-<!-- TOPS  -->
-<div class="col">
-                    <div class="card h-100">
-                        <img src="whitetop.jpeg" class="card-img-1top1" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Off-Shoulder White Top</h5>
-                            <p class="card-text">₱150.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="" class="add-to-cart" data-name="Black and White Street Shirt" data-price="250.00">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="yttrendtop.jpeg" class="card-img-1top2" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">White Trendy Cropped Top</h5>
-                            <p class="card-text">₱250.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="brownfittedtop.jpeg" class="card-img-1top3" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Brown Fitted Top</h5>
-                            <p class="card-text">₱150.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="blacktube.jpg" class="card-img-1top4" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Black Tube Top</h5>
-                            <p class="card-text">₱120.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="haltertop.jpg" class="card-img-1top5" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Low-Cut Red Halter Top</h5>
-                            <p class="card-text">₱200.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="greytop.jpeg" class="card-img-1top6" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Grey V-Neck Top</h5>
-                            <p class="card-text">₱180.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="moonshirt.jpeg" class="card-img-1top7" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Moon Graphic Shirt</h5>
-                            <p class="card-text">₱250.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="butterflyshirt.jpeg" class="card-img-1top8" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Butterfly Graphic Shirt</h5>
-                            <p class="card-text">₱250.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-</div>
+    <header>
+        <img src="logofinal.png" class="headerlogo">
+        <div class="dropdown-container">
+            <a class="headercateg dropdown-toggle" href="#" data-bs-toggle="dropdown"> CATEGORIES </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="womens.html">WOMEN'S</a></li>
+                <li><a class="dropdown-item" href="mens.html">MEN'S</a></li>
+            </ul>
         </div>
+        <img src="fabheaderfinal.png" class="fabh">
+
+<div id="cart-container" style="margin-left: auto; margin-right: 2vw; position: relative; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#cartModal">
+    <img src="cart.png" alt="Cart" style="width: 40px; height: 40px;">
+    <span id="cart-count" style="position: absolute; top: -5px; right: -10px; background-color: red; color: white; font-size: 14px; font-weight: bold; padding: 2px 6px; border-radius: 50%;">0</span>
+</div>
+
+        <form class="d-flex search-form">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <a href="" role="button" data-bs-toggle="offcanvas" aria-expanded="false" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <img src="hammenu.svg" class="hamburger">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h2 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <hr class="menudivider">
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="homepage.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">PROFILE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+
+        
+    </header>
+
+    <div class="category-links">
+        <a href="#" data-category="tops" class="active">TOPS</a>
+        <a href="#" data-category="bottoms">BOTTOMS</a>
+        <a href="#" data-category="footwear">FOOTWEAR</a>
     </div>
-<!--  -->
-    
+
+<!-- TOPS ROW 1  -->
+    <div id="tops-row" class="row active">
+        <div class="col">
+            <div class="card h-100">
+                <img src="whitetop.jpeg" class="card-img-top" alt="Top 1">
+                <div class="card-body">
+                    <h5 class="card-title">White Off-Shoulder Top</h5>
+                    <p>₱250.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary"><a href="" class="add-to-cart"> + ADD TO CART</a></small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="yttrendtop.jpeg" class="card-img-top2" alt="Top 1">
+                <div class="card-body">
+                    <h5 class="card-title">Trendy White-Black Top</h5>
+                    <p>₱250.00</p>
+
+                </div>
+                <div class="card-footer">
+<small class="text-body-secondary"><a href="" class="add-to-cart"> + ADD TO CART</a></small>                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card h-100">
+                <img src="brownfittedtop.jpeg" class="card-img-top" alt="Top 2">
+                <div class="card-body">
+                    <h5 class="card-title">Brown Fitted Top</h5>
+                    <p>₱250.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary"><a href="" class="add-to-cart"> + ADD TO CART</a></small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="blacktube.jpg" class="card-img-top4" alt="Top 3">
+                <div class="card-body">
+                    <h5 class="card-title">Black Tube</h5>
+                    <p>₱200.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary"><a href="" class="add-to-cart"> + ADD TO CART</a></small>
+                </div>
+            </div>
+        </div>
+        </div>
+<!-- END TOPS ROW 1 -->
+
+        
 <!-- BOTTOMS  -->
-        <div class="collapse" id="collapseBottoms" data-bs-parent="#categoryAccordion">
-        <div class="card card-body">
-            <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4 g-3">
-
-
-<div class="col">
-                    <div class="card h-100">
-                        <img src="flarepants.jpg" class="card-img-2top1" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Black Flare Pants</h5>
-                            <p class="card-text">₱250.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
+    <div id="bottoms-row" class="row">
+        <div class="col">
+            <div class="card h-100">
+                <img src="flarepants.jpg" class="card-img-top" alt="Bottom 1">
+                <div class="card-body">
+                    <h5 class="card-title">Black Flare Pants</h5>
+                    <p>₱350.00</p>
                 </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="koketdenimpants.jpg" class="card-img-2top2" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Trendy Denim Pants</h5>
-                            <p class="card-text">₱350.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary"><a href="" class="add-to-cart"> + ADD TO CART</a></small>
                 </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="midiskirt.jpg" class="card-img-2top3" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Bow Decor Midi Skirt</h5>
-                            <p class="card-text">₱250.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-
-<div class="col">
-                    <div class="card h-100">
-                        <img src="longdenimskirt.jpg" class="card-img-2top4" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Long Denim Skirt</h5>
-                            <p class="card-text">₱350.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="lbrowncargo.jpg" class="card-img-2top5" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Light Brown Cargo Pants</h5>
-                            <p class="card-text">₱300.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="kneelength.jpg" class="card-img-2top6" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Knee Length Denim Shorts</h5>
-                            <p class="card-text">₱280.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="spiralshorts.jpg" class="card-img-2top7" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Spiral Decor Beige Shorts</h5>
-                            <p class="card-text">₱250.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="brownskirt.jpg" class="card-img-2top8" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Brown Pleated Mini Skirt</h5>
-                            <p class="card-text">₱280.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-</div>
-        </div>
-    </div>
-
-    
-<!-- FOOTWEAR  -->
-        <div class="collapse" id="collapseFootwear" data-bs-parent="#categoryAccordion">
-            <div class="card card-body">
-           <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4 g-3">
-
-
-<div class="col">
-                    <div class="card h-100">
-                        <img src="cornysneakers.jpeg" class="card-img-3top1" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Vans Old Skool Black Sneakers </h5>
-                            <p class="card-text">₱4,499.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="redflats.jpg" class="card-img-3top2" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Red Ballerina Flats</h5>
-                            <p class="card-text">₱480.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="brownloafers.jpg" class="card-img-3top3" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Brown Leather Loafers</h5>
-                            <p class="card-text">₱1,050.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-
-<div class="col">
-                    <div class="card h-100">
-                        <img src="redboots.jpeg" class="card-img-3top4" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Red Boots</h5>
-                            <p class="card-text">₱120.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="blackdollshoes.jpg" class="card-img-3top5" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Black Dolly Platform Shoes</h5>
-                            <p class="card-text">₱580.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="redconverse.jpeg" class="card-img-3top6" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Red Converse</h5>
-                            <p class="card-text">₱980.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="" >ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="brownsandals.jpg" class="card-img-3top7" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Warm Brown Roman Sandals</h5>
-                            <p class="card-text">₱650.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-<div class="col">
-                    <div class="card h-100">
-                        <img src="greencrocs.jpg" class="card-img-3top8" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Green Plain Crocs</h5>
-                            <p class="card-text">₱950.00</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-body-secondary"><a href="">ADD TO CART</a></small>
-                        </div>
-                    </div>
-                </div>
-</div>
-
             </div>
         </div>
 
-    <!-- END PRODUCTS CATEGORY -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="kneelength.jpg" class="card-img-bott2" alt="Bottom 2">
+                <div class="card-body">
+                    <h5 class="card-title">Denim Knee-Length Shorts</h5>
+                    <p>₱250.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary"><a href="" class="add-to-cart"> + ADD TO CART</a></small>
+                </div>
+            </div>
+        </div>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-        document.querySelectorAll(".add-to-cart").forEach(button => {
-            button.addEventListener("click", function (e) {
-                e.preventDefault();
-
-                const name = this.getAttribute("data-name");
-                const price = parseFloat(this.getAttribute("data-price"));
-
-                const existingItem = cart.find(item => item.name === name);
-                if (existingItem) {
-                    existingItem.quantity += 1;
-                } else {
-                    cart.push({ name, price, quantity: 1 });
-                }
-
-                localStorage.setItem("cart", JSON.stringify(cart));
-                alert(`${name} added to cart!`);
-            });
-        });
-    });
-</script>
+        <div class="col">
+            <div class="card h-100">
+                <img src="longdenimskirt.jpg" class="card-img-bott2" alt="Bottom 2">
+                <div class="card-body">
+                    <h5 class="card-title">Long Denim Skirt</h5>
+                    <p>₱250.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary"><a href="" class="add-to-cart"> + ADD TO CART</a></small>
+                </div>
+            </div>
+        </div>
+       
+        <div class="col">
+            <div class="card h-100">
+                <img src="midiskirt.jpg" class="card-img-bott2" alt="Bottom 2">
+                <div class="card-body">
+                    <h5 class="card-title">White Midi Skirt</h5>
+                    <p>₱250.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary"><a href="" class="add-to-cart"> + ADD TO CART</a></small>
+                </div>
+            </div>
+        </div>
+    </div>
 
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
+<!-- END BOTTOMS -->
+
+<!-- FOOTWEAR -->
+
+    <div id="footwear-row" class="row">
+        <div class="col">
+            <div class="card h-100">
+                <img src="redflats.jpg" class="card-img-top" alt="Footwear 1">
+                <div class="card-body">
+                    <h5 class="card-title">Red Flat Shoes</h5>
+                    <p>₱260.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary"><a href="" class="add-to-cart"> + ADD TO CART</a></small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="brownloafers.jpg" class="card-img-top" alt="Footwear 2">
+                <div class="card-body">
+                    <h5 class="card-title">Brown Loafers</h5>
+                    <p>₱350.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary"><a href="" class="add-to-cart"> + ADD TO CART</a></small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="blackshoes.jpeg" class="card-img-bott3" alt="Footwear 2">
+                <div class="card-body">
+                    <h5 class="card-title">Black Flat Shoes</h5>
+                    <p>₱280.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary"><a href="" class="add-to-cart"> + ADD TO CART</a></small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="blackboots.jpeg" class="card-img-foot4" alt="Footwear 2">
+                <div class="card-body">
+                    <h5 class="card-title">Black Boots</h5>
+                    <p>₱50.00</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary"><a href="" class="add-to-cart"> + ADD TO CART</a></small>
+                </div>
+            </div>
+        </div>
+        </div>
+
+<!-- END FOOTWEAR -->
+    <footer>
+        <p class="foot">© All Rights Reserved | Designed by FabriXX Team</p>
+    </footer>
+
+    <!-- Place your modal HTML here (as you already have) -->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm modal-md modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="cart-items-container">
+        <!-- Cart items will be injected here -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" id="clear-cart">Clear Cart</button>
+        <button type="button" class="btn btn-success" id="place-order">Place Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Move your <script> block here, just before </body> -->
+<script>
+  document.querySelectorAll('.category-links a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // Remove active class from all links
+        document.querySelectorAll('.category-links a').forEach(el => el.classList.remove('active'));
+        // Add active class to clicked link
+        this.classList.add('active');
+
+        // Get target category
+        const category = this.getAttribute('data-category');
+
+        // Hide all category rows
+        document.querySelectorAll('.row').forEach(row => row.classList.remove('active'));
+
+        // Show the selected category row
+        document.getElementById(`${category}-row`).classList.add('active');
+    });
+});
+
+  // Function to update cart count display
+  // Function to update cart count display
+function updateCartDisplay() {
+    const cartCount = localStorage.getItem('cartCount') || 0;
+    document.getElementById('cart-count').textContent = cartCount;
+}
+
+// Ensure the cart is updated when the page is loaded
+document.addEventListener('DOMContentLoaded', function () {
+    updateCartDisplay();
+
+    // Attach "Add to Cart" event listeners ONCE
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
+            const card = this.closest('.card');
+            const title = card.querySelector('.card-title').textContent;
+            const price = card.querySelector('.card-body p').textContent;
+
+            let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            const existingItem = cartItems.find(item => item.title === title);
+            if (existingItem) {
+                existingItem.qty = (existingItem.qty || 1) + 1;
+            } else {
+                cartItems.push({ title, price, qty: 1 });
+            }
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+            let cartCount = parseInt(localStorage.getItem('cartCount')) || 0;
+            cartCount++;
+            localStorage.setItem('cartCount', cartCount);
+            updateCartDisplay();
+        });
+    });
+
+    // Attach clear cart event ONCE
+    document.getElementById('clear-cart').addEventListener('click', function () {
+        localStorage.removeItem('cartItems');
+        localStorage.setItem('cartCount', 0);
+        updateCartDisplay();
+        populateCartModal();
+    });
+
+    // Add event listener for Place Order button
+    document.getElementById('place-order').addEventListener('click', function () {
+      // Simple order placed alert, you can expand this as needed
+      if ((JSON.parse(localStorage.getItem('cartItems')) || []).length === 0) {
+        alert('Your cart is empty.');
+        return;
+      }
+      alert('Order placed successfully!');
+      localStorage.removeItem('cartItems');
+      localStorage.setItem('cartCount', 0);
+      updateCartDisplay();
+      populateCartModal();
+      // Optionally close modal
+      var cartModal = bootstrap.Modal.getOrCreateInstance(document.getElementById('cartModal'));
+      cartModal.hide();
+    });
+});
+
+// Show cart contents in modal when opened
+document.getElementById('cartModal').addEventListener('show.bs.modal', function () {
+    populateCartModal();
+});
+
+function populateCartModal() {
+    const cartContainer = document.getElementById('cart-items-container');
+    cartContainer.innerHTML = ""; // Clear previous content
+
+    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    if (cartItems.length === 0) {
+        cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+        return;
+    }
+
+    cartItems.forEach((item, idx) => {
+        const itemDiv = document.createElement('div');
+        itemDiv.classList.add('cart-item');
+        itemDiv.style.display = "flex";
+        itemDiv.style.justifyContent = "space-between";
+        itemDiv.style.alignItems = "center";
+        itemDiv.style.marginBottom = "10px";
+        itemDiv.innerHTML = `
+            <span>
+                <strong>${item.title}</strong> - ${item.price} 
+                ${item.qty ? `&times; ${item.qty}` : ''}
+            </span>
+            <button class="btn btn-sm btn-outline-danger remove-item" data-index="${idx}">Remove</button>
+        `;
+        cartContainer.appendChild(itemDiv);
+    });
+
+    // Add event listeners for remove buttons
+    cartContainer.querySelectorAll('.remove-item').forEach(btn => {
+        btn.addEventListener('click', function() {
+            let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            const idx = parseInt(this.getAttribute('data-index'));
+            // Decrease cart count by qty or 1
+            let cartCount = parseInt(localStorage.getItem('cartCount')) || 0;
+            const removedQty = cartItems[idx].qty || 1;
+            cartCount -= removedQty;
+            if (cartCount < 0) cartCount = 0;
+            localStorage.setItem('cartCount', cartCount);
+
+            // Remove item from array
+            cartItems.splice(idx, 1);
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+            updateCartDisplay();
+            populateCartModal();
+        });
+    });
+}
+
+// SEARCH FUNCTIONALITY
+  document.querySelector('.search-form').addEventListener('submit', function(e) {
+
+    e.preventDefault();
+  const query = this.querySelector('input[type="search"]').value.trim().toLowerCase();
+
+  // Only search in the currently active row
+  const activeRow = document.querySelector('.row.active');
+  let anyVisible = false;
+  activeRow.querySelectorAll('.col').forEach(col => {
+    const cardTitle = col.querySelector('.card-title');
+    if (cardTitle) {
+      const title = cardTitle.textContent.toLowerCase();
+      if (title.includes(query) || query === "") {
+        col.style.display = ""; // Show
+        anyVisible = true;
+      } else {
+        col.style.display = "none"; // Hide
+      }
+    } else {
+      // If no card-title, hide the col
+      col.style.display = "none";
+    }
+  });
+
+  // Optionally, show a message if nothing matches
+  // (not required, but improves UX)
+});
+
+// Optional: Reset search when switching categories
+  document.querySelectorAll('.category-links a').forEach(link => {
+    link.addEventListener('click', function() {
+      document.querySelector('.search-form input[type="search"]').value = "";
+      // Show all cards in the selected row
+      const category = this.getAttribute('data-category');
+      document.querySelectorAll('.row').forEach(row => {
+        row.querySelectorAll('.col').forEach(col => col.style.display = "");
+      });
+    });
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 
 </body>
-
-
-<footer>
-    <p class="foot"><a href="" class="foot1">CONTACT US</a> | <a href="" class="foot2">FAQS</a></p>
-</footer>
 </html>

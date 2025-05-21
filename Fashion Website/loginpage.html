@@ -253,32 +253,31 @@
   </div>
         
 <script>
-        function greetUser() {
-
+    function greetUser() {
         const nameInput = document.getElementById("nameInput");
         const passInput = document.getElementById("passInput");
         const alertBox = document.getElementById("greetingAlert");
         const enteredName = nameInput.value.trim();
         const enteredPassword = passInput.value;
         const correctPassword = "00000";
-        const redirectURL = "homepage.html"; // Replace with the actual URL
+
+        // Get redirect parameter from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const redirectURL = urlParams.get('redirect') || "homepage.html";
 
         if (enteredName !== "" && enteredPassword === correctPassword) {
-            // Both name is entered and password is correct
+            // Login success → redirect
             window.location.href = redirectURL;
         } else {
-            // Either name is empty or password is incorrect
+            // Show error message
             alertBox.innerText = "Please enter your name and the correct password.";
             alertBox.classList.remove("d-none");
             alertBox.classList.replace("alert-info", "alert-warning");
-
-            // Optionally, you can clear the password field after an error
             passInput.value = "";
-            }
-            }
-
-
+        }
+    }
 </script>
+
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
